@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaisei HarunoUmi', serif
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(-30deg, #30a9f4 20% , #3a78b7 50% , #262626 50% , #607d86 100% );
+    filter: hue-rotate(120deg);
+    animation: hueanimation 10s infinite;
+}
+@keyframes hueanimation {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+.box{
+    position: relative;
+    padding: 40px;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 13px;
+
+}
+h1{
+    color: #e4f7f8;
+    font-size: 37px;
+    margin-bottom: 19px;
+    letter-spacing: 0.09em;
+    line-height: 0.7;
+    font-weight: 900;
+    font-style: bold;
+}
+.box .form .inputbx{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.box .form .inputbx input{
+    width: 100%; 
+    border: 2px solid rgba(255,255,255,0.2);
+    background: transparent;
+    padding: 8px 10px;
+    color: white;
+    box-shadow: inset 0 0 25px rgb(255,255,255,0.3);
+    border-radius: 8px;
+}
+.box .form .inputbx input::placeholder{
+    color: white;
+    
+}
+.box .form .inputbx input[type="submit"]{
+    background-color: white;
+    color: black;
+    max-width: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.102em;
+    cursor: pointer;
+}
+.box .form .inputbx img{
+    position: absolute;
+    top: 8px;
+    transform: scale(0.9);
+    filter: invert(1);
+}
+.remember{
+    position: relative;
+    color: #ffff;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.remember input{
+    cursor: pointer;
+    margin-left: 4px ;
+}
+.box .form a{
+    color: white;
+    text-decoration: none;
+}
+.box .form p{
+    margin-bottom: 8px;
+}
+
